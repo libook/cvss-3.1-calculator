@@ -132,7 +132,7 @@ CVSS31_Help.helpText_en /* For compatible with original version */ = CVSS31_Help
 };
 
 CVSS31_Help['helpText_zh-CN'] = {
-    baseMetricGroup_Legend: "The Base Metric group represents the intrinsic  characteristics of a vulnerability that are constant over time and across user environments. Determine the vulnerable component and score Attack Vector, Attack Complexity, Privileges Required and User Interaction relative to this.",
+    baseMetricGroup_Legend: "本度量标准组表示漏洞的固有特征，该特征在一段时间内以及在整个用户环境中都是恒定不变的。确定易受攻击的组件，并对攻击向量，攻击复杂性，所需特权和与此相关的用户交互进行评分。",
     AV_Heading: "111111This metric reflects the context by which vulnerability exploitation is possible. The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component.",
     AV_N_Label: "The vulnerable component is bound to the network stack and the set of possible attackers extends beyond the other options listed, up to and including the entire Internet. Such a vulnerability is often termed 'remotely exploitable' and can be thought of as an attack being exploitable at the protocol level one or more network hops away (e.g., across one or more routers).",
     AV_A_Label: "The vulnerable component is bound to the network stack, but the attack is limited at the protocol level to a logically adjacent topology. This can mean an attack must be launched from the same shared physical (e.g., Bluetooth or IEEE 802.11) or logical (e.g., local IP subnet) network, or from within a secure or otherwise limited administrative domain (e.g., MPLS, secure VPN to an administrative network zone).",
