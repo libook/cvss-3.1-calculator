@@ -139,7 +139,7 @@ CVSS31_Help['helpText_zh-CN'] = {
     AV_L_Label: "易受攻击的组件未绑定到网络栈；攻击者是通过读取、写入、执行功能等途径进行攻击； 或者，攻击者通过本地（例如，键盘，控制台）或远程（例如SSH）访问目标系统来利用此漏洞； 又或者，攻击者依靠他人的用户交互行为来执行利用此漏洞所需的操作（例如，诱骗合法用户打开恶意文档）。",
     AV_P_Label: "攻击的实施需要攻击者以物理方式接触或操纵易受攻击的组件。 物理上的互动可能是短暂的，也可能是持续的。",
     AC_Heading: "该指标表明攻击者无法控制利用此漏洞所必须存在的条件。 要想达成这样的条件可能需要收集有关目标的更多信息，或等出现计算异常。 此指标的评估，不包括任何需要进行用户交才能利用此漏洞的情况。 如果需要特定的配置才能使攻击成功，则对此基本指标的评分应基于易受攻击的组件位于该配置中的假设。",
-    AC_L_Label: "Specialized access conditions or extenuating circumstances do not exist. An attacker can expect repeatable success against the vulnerable component.",
+    AC_L_Label: "专门的访问条件或不存在可减轻的情况。 攻击者能期望重复利用易受攻击的组件。",
     AC_H_Label: "A successful attack depends on conditions beyond the attacker's control. That is, a successful attack cannot be accomplished at will, but requires the attacker to invest in some measurable amount of effort in preparation or execution against the vulnerable component before a successful attack can be expected. For example, a successful attack may require an attacker to: gather knowledge about the environment in which the vulnerable target/component exists; prepare the target environment to improve exploit reliability; or inject themselves into the logical network path between the target and the resource requested by the victim in order to read and/or modify network communications (e.g., a man in the middle attack).",
     PR_Heading: "This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability.",
     PR_N_Label: "The attacker is unauthorized prior to attack, and therefore does not require any access to settings or files to carry out an attack.",
