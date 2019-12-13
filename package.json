@@ -1,0 +1,27 @@
+{
+  "name": "cvss-3.1-calculator",
+  "version": "1.0.0",
+  "description": "Common Vulnerability Scoring System Version 3.1 Calculator",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/libook/cvss-3.1-calculator.git"
+  },
+  "keywords": [
+    "cvss",
+    "calculator"
+  ],
+  "author": {
+    "name": "Daniel Li",
+    "email": "libook7@gmail.com",
+    "url": "https://github.com/libook"
+  },
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/libook/cvss-3.1-calculator/issues"
+  },
+  "homepage": "https://github.com/libook/cvss-3.1-calculator#readme",
+}
