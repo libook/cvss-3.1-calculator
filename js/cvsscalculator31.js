@@ -25,6 +25,8 @@
 
 "use strict";
 
+const language = navigator.language || 'en_US';
+
 function updateScores() {
     var result = CVSS31.calculateCVSSFromMetrics(inputValue('input[type="radio"][name=AV]:checked'), inputValue('input[type="radio"][name=AC]:checked'), inputValue('input[type="radio"][name=PR]:checked'), inputValue('input[type="radio"][name=UI]:checked'), inputValue('input[type="radio"][name=S]:checked'), inputValue('input[type="radio"][name=C]:checked'), inputValue('input[type="radio"][name=I]:checked'), inputValue('input[type="radio"][name=A]:checked'), inputValue('input[type="radio"][name=E]:checked'), inputValue('input[type="radio"][name=RL]:checked'), inputValue('input[type="radio"][name=RC]:checked'), inputValue('input[type="radio"][name=CR]:checked'), inputValue('input[type="radio"][name=IR]:checked'), inputValue('input[type="radio"][name=AR]:checked'), inputValue('input[type="radio"][name=MAV]:checked'), inputValue('input[type="radio"][name=MAC]:checked'), inputValue('input[type="radio"][name=MPR]:checked'), inputValue('input[type="radio"][name=MUI]:checked'), inputValue('input[type="radio"][name=MS]:checked'), inputValue('input[type="radio"][name=MC]:checked'), inputValue('input[type="radio"][name=MI]:checked'), inputValue('input[type="radio"][name=MA]:checked'));
     if (result.success === true) {
@@ -234,14 +236,17 @@ function cvssCalculator() {
         setTimeout(cvssCalculator, 100);
         return;
     }
+
+    const helpText = CVSS31_Help[`helpText_${language}`];
+
     var L, i, n;
     L = document.querySelectorAll(".cvss-calculator input");
     i = L.length;
     while (i--) {
         bind(L[i], "click", delayedUpdateScores);
     }
-    for (n in CVSS31_Help.helpText_en) {
-        document.getElementById(n).setAttribute("title", CVSS31_Help.helpText_en[n]);
+    for (n in helpText) {
+        document.getElementById(n).setAttribute("title", helpText[n]);
     }
     urlhash();
     if (("onhashchange" in window)) {
