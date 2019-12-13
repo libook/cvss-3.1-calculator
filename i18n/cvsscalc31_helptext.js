@@ -25,7 +25,7 @@
 
 var CVSS31_Help = {};
 // Language types are defined in BCP 47 https://www.ietf.org/rfc/bcp/bcp47.txt
-CVSS31_Help['helpText_en-US']= {
+CVSS31_Help.helpText_en /* For compatible with original version */ = CVSS31_Help['helpText_en-US'] /* For this i18n version */ = {
     baseMetricGroup_Legend: "The Base Metric group represents the intrinsic  characteristics of a vulnerability that are constant over time and across user environments. Determine the vulnerable component and score Attack Vector, Attack Complexity, Privileges Required and User Interaction relative to this.",
     AV_Heading: "This metric reflects the context by which vulnerability exploitation is possible. The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component.",
     AV_N_Label: "The vulnerable component is bound to the network stack and the set of possible attackers extends beyond the other options listed, up to and including the entire Internet. Such a vulnerability is often termed 'remotely exploitable' and can be thought of as an attack being exploitable at the protocol level one or more network hops away (e.g., across one or more routers).",
